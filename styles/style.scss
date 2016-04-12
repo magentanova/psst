@@ -130,6 +130,7 @@ body {
 
  .container {
     text-align: center;
+    margin-top: 3em;
 
     input {
         display: block;
@@ -146,5 +147,25 @@ body {
         border: 5px solid #555;
         text-align: center;
         padding: 1em;
+    }
+
+    .navBar {
+
+        a {
+            background: #555;
+            color: #ddd;
+            border-radius: 5%;
+            text-decoration: none;
+            padding: 1em 2em;
+            margin: 2em;
+        }
+    }
+    .peep {
+        button {
+            display: inline-block;
+        }
+        p {
+            display: inline-block;
+        }
     }
  }
