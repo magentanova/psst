@@ -21,6 +21,11 @@ var Actions = {
 		// and a cliq_id to assign them the new id
 		userModel.set({cliq_id:cliqId})
 		userModel.save()
+	},
+
+	addSecret: function(secretObject) {
+		var secretsColl = new Collections.SecretsCollection()
+		secretsColl.create(secretObject)
 	}
 }
 

@@ -160,12 +160,34 @@ body {
             margin: 2em;
         }
     }
-    .peep {
-        button {
-            display: inline-block;
+    .peeps {
+        border: 3px solid #555;
+        width: 20%;
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+
+        input {
+            display: block;
+            padding: .5em;
+            width: 100%;
+            margin: 3em auto;
         }
-        p {
-            display: inline-block;
+
+        .peep {
+            button {
+                display: inline-block;
+            }
+            p {
+                display: inline-block;
+            }
         }
+    }
+
+    .secrets {
+        border: 3px solid #555;
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
     }
  }

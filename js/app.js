@@ -83,7 +83,8 @@ function app() {
             myMod.once('sync',function() {
                 var cliqId = myMod.get('cliq_id')
                 var usersInCliq = new Collections.UsersByCliqId(cliqId)
-                DOM.render(<CliqView cliqId={cliqId} peepsColl={usersInCliq}/>, document.querySelector('.container'))                
+                var secretsInCliq = new Collections.SecretsByCliqId(cliqId)
+                DOM.render(<CliqView cliqId={cliqId} secretsColl={secretsInCliq} peepsColl={usersInCliq}/>, document.querySelector('.container'))                
             })
         },
 

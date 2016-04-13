@@ -39,8 +39,18 @@ var Collections = {
         }
     }),
 
+    SecretsByCliqId: Backbone.Firebase.Collection.extend({
+        initialize: function(targetCliqId){
+            this.url = ref.child('secrets').orderByChild('cliq_id').equalTo(targetCliqId)
+        }
+    }),
+
     CliqCollection: Backbone.Firebase.Collection.extend({
         url: 'http://hushhush.firebaseio.com/cliqs'
+    }),
+
+    SecretsCollection: Backbone.Firebase.Collection.extend({
+        url: 'http://hushhush.firebaseio.com/secrets'
     })
 }
 
